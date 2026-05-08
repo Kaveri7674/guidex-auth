@@ -56,7 +56,7 @@ function Login() {
   };
 
   return (
-    <div className="min-h-screen bg-black relative overflow-hidden flex items-center justify-center px-4">
+    <div className="min-h-screen bg-transparent relative overflow-hidden flex items-center justify-center px-4">
 
       {/* Background Glow */}
       <div className="absolute w-72 h-72 bg-blue-500 rounded-full blur-3xl opacity-20 top-10 left-10"></div>
@@ -90,7 +90,11 @@ function Login() {
         )}
 
         {/* Form */}
-        <form onSubmit={handleLogin} className="space-y-6">
+        <form
+          autoComplete="off"
+          onSubmit={handleLogin}
+          className="space-y-6"
+        >
 
           {/* Email */}
           <div>
@@ -105,6 +109,7 @@ function Login() {
               <input
                 type="email"
                 name="email"
+                autoComplete="off"
                 placeholder="Enter your email"
                 value={formData.email}
                 onChange={handleChange}
@@ -127,6 +132,7 @@ function Login() {
               <input
                 type={showPassword ? "text" : "password"}
                 name="password"
+                autoComplete="new-password"
                 placeholder="Enter your password"
                 value={formData.password}
                 onChange={handleChange}
