@@ -1,16 +1,126 @@
-# React + Vite
+# GuidEx Auth Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive authentication system built using React, Vite, Tailwind CSS, and Framer Motion.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔗 [https://guidex-auth.vercel.app](https://guidex-auth.vercel.app)
 
-## React Compiler
+## GitHub Repository
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔗 [https://github.com/Kaveri7674/guidex-auth](https://github.com/Kaveri7674/guidex-auth)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Features
+
+✅ Responsive Login & Signup Pages
+✅ Modern Glassmorphism UI Design
+✅ Smooth Animations using Framer Motion
+✅ Form Validation
+✅ Password Show/Hide Toggle
+✅ Protected Dashboard Route
+✅ LocalStorage Authentication
+✅ Logout Functionality
+✅ Mobile Responsive Layout
+✅ Premium Dark Theme UI
+
+---
+
+# Tech Stack
+
+## Frontend
+
+* React.js
+* Vite
+* Tailwind CSS
+* React Router DOM
+* Framer Motion
+* React Icons
+
+---
+
+# Project Structure
+
+```bash
+src/
+ ├── components/
+ │    └── AuthLayout.jsx
+ │
+ ├── pages/
+ │    ├── Login.jsx
+ │    ├── Signup.jsx
+ │    └── Dashboard.jsx
+ │
+ ├── App.jsx
+ ├── main.jsx
+ └── index.css
+```
+
+---
+
+# Authentication Flow
+
+1. User creates account using Signup page.
+2. User data is stored using LocalStorage.
+3. User logs in using registered credentials.
+4. Dashboard route is protected.
+5. Unauthorized users are redirected to Login page.
+6. Logout clears session and redirects back to Login page.
+
+---
+
+# Installation & Setup
+
+## Clone Repository
+
+```bash
+git clone https://github.com/Kaveri7674/guidex-auth.git
+```
+
+## Navigate to Project Folder
+
+```bash
+cd guidex-auth
+```
+
+## Install Dependencies
+
+```bash
+npm install
+```
+
+## Run Development Server
+
+```bash
+npm run dev
+```
+
+---
+
+# Deployment
+
+The project is deployed using Vercel.
+
+---
+
+# Future Improvements
+
+* Firebase Authentication
+* Backend Integration
+* JWT Authentication
+* Forgot Password Feature
+* User Profile Section
+* Theme Customization
+
+---
+
+# Author
+
+Kaveri
+
+---
+
+# Acknowledgement
+
+This project was developed as part of the GuidEx MERN Stack Developer Int
